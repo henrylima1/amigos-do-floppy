@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos do Floppy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar bg-sidebar d-flex flex-column p-4">
+            <div class="sidebar-header mb-4">
+                  <span class="sidebar-title fw-bold text-white">Amigos do Floppy</span>
+                <button class="btn btn-link text-white d-lg-none sidebar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="nav flex-column sidebar-nav">
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home me-2"></i>Início</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="projeto.html"><i class="fas fa-info-circle me-2"></i>Projeto</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="adocao.html"><i class="fas fa-paw me-2"></i>Adoção</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="dicas.html"><i class="fas fa-heart me-2"></i>Dicas & Cuidados</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="denuncias.html"><i class="fas fa-exclamation-triangle me-2"></i>Denúncias</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="contato.html"><i class="fas fa-envelope me-2"></i>Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-content flex-grow-1">
+            <header class="topbar d-flex align-items-center px-4 py-3 bg-white shadow-sm">
+                <img src="img/logo.png" alt="Logo" class="logo me-2">
+                <span class="topbar-title fw-bold">Amigos do Floppy</span>
+            </header>
+            <main class="content-area p-4">
+                <section class="welcome-section mb-4 p-4 rounded bg-welcome">
+                    <h1 class="fw-bold text-center text-orange">Amigos do Floppy</h1>
+                    <p class="text-center text-muted">Ajudando animais a encontrarem lares amorosos há mais de 14 anos</p>
+                </section>
+                <section class="animals-section mb-5">
+                    <div class="mb-3">
+                        <h5 class="fw-bold">Nossos Animais</h5>
+                        <span class="text-muted">Conheça nossos amiguinhos peludos</span>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="fw-bold">Recém-Chegados</h6>
+                    </div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="animal-card card h-100">
+                                <img src="img/panda.jpg" class="card-img-top" alt="Panda">
+                                <div class="card-body">
+                                    <div class="fw-bold">Panda</div>
+                                    <span class="badge bg-light text-dark border me-1">Cachorro</span>
+                                    <span class="badge bg-light text-dark border">Médio</span>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalPanda">Ver mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="animal-card card h-100">
+                                <img src="img/florisbela.jpg" class="card-img-top" alt="Florisbela">
+                                <div class="card-body">
+                                    <div class="fw-bold">Florisbela</div>
+                                    <span class="badge bg-light text-dark border me-1">Cachorro</span>
+                                    <span class="badge bg-light text-dark border">Médio</span>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalFlorisbela">Ver mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="animal-card card h-100">
+                                <img src="img/maria.jpg" class="card-img-top" alt="Maria Rosinha">
+                                <div class="card-body">
+                                    <div class="fw-bold">Maria Rosinha</div>
+                                    <span class="badge bg-light text-dark border me-1">Cachorro</span>
+                                    <span class="badge bg-light text-dark border">Médio</span>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalMaria">Ver mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="animal-card card h-100">
+                                <img src="img/lara.jpg" class="card-img-top" alt="Lara">
+                                <div class="card-body">
+                                    <div class="fw-bold">Lara</div>
+                                    <span class="badge bg-light text-dark border me-1">Cachorro</span>
+                                    <span class="badge bg-light text-dark border">Médio</span>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalLara">Ver mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-end">
+                        <button class="btn btn-light">Ver todos os Pets</button>
+                    </div>
+                    <div class="mb-3">
+                        <h6 class="fw-bold">Pets Perdidos</h6>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="animal-card card h-100">
+                                <img src="https://images.unsplash.com/photo-1518715308788-3005759c61d3" class="card-img-top" alt="Pet Perdido 1">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="animal-card card h-100">
+                                <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" class="card-img-top" alt="Pet Perdido 2">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="animal-card card h-100">
+                                <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" class="card-img-top" alt="Pet Perdido 3">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="animal-card card h-100">
+                                <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a" class="card-img-top" alt="Pet Perdido 4">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div class="container my-4">
+                <div class="rounded-4 p-4" style="background:#eef6ff; border-radius:16px;">
+                  <h2 class="fw-bold text-center mb-3" style="color:#f59c07;">Ajude os Amigos do Floppy Hoje</h2>
+                  <p class="text-center mb-4" style="color:#181c5a;">O abrigo mantém aproximadamente 400 cães resgatados e enfrenta custos diários de R$800 com alimentação e cuidados básicos. Sua doação faz a diferença!</p>
+                  <div class="d-flex justify-content-center mb-3">
+                    <button class="btn w-50" style="background:#f59c07; color:#fff; font-weight:600; font-size:1.15rem;">Adotar um Pet</button>
+                  </div>
+                  <div class="d-flex justify-content-center gap-3 mb-3 flex-wrap">
+                    <button class="btn btn-outline-warning" style="min-width:160px; font-weight:500; color:#f59c07; border-color:#f59c07;">Ser Voluntário</button>
+                    <button class="btn btn-outline-warning" style="min-width:220px; font-weight:500; color:#f59c07; border-color:#f59c07;">Doar via PIX: 949.655.600-00</button>
+                  </div>
+                  <div class="text-center mt-2" style="color:#181c5a; font-size:0.98rem;">PIX: CPF 949.655.600-00 (Denise Oliveira Costa)</div>
+                </div>
+              </div>
+              <!-- Donation/Volunteer Section End -->
+          </div>
+      </div>
+      <!-- Modals for each animal -->
+      <div class="modal fade" id="modalPanda" tabindex="-1" aria-labelledby="modalPandaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalPandaLabel">Panda</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="img/panda.jpg" class="img-fluid rounded mb-3" alt="Panda">
+              <p>Cachorro médio, muito brincalhão e carinhoso. Adora correr e receber carinho!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalFlorisbela" tabindex="-1" aria-labelledby="modalFlorisbelaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalFlorisbelaLabel">Florisbela</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="img/florisbela.jpg" class="img-fluid rounded mb-3" alt="Florisbela">
+              <p>Cachorra dócil, ótima para famílias. Gosta de passeios e de brincar com outros cães.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalMaria" tabindex="-1" aria-labelledby="modalMariaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalMariaLabel">Maria Rosinha</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="img/maria.jpg" class="img-fluid rounded mb-3" alt="Maria Rosinha">
+              <p>Carinhosa e tranquila, adora um colo e é muito companheira. Ideal para ambientes calmos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalLara" tabindex="-1" aria-labelledby="modalLaraLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLaraLabel">Lara</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="img/lara.jpg" class="img-fluid rounded mb-3" alt="Lara">
+              <p>Cheia de energia, perfeita para quem gosta de atividades ao ar livre. Muito leal e esperta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            <footer class="footer text-center py-3 bg-white mt-auto">
+                <span class="text-muted">© 2025 Amigos do Floppy. Todos os direitos reservados.</span>
+            </footer>            <!-- Donation/Volunteer Section Start -->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

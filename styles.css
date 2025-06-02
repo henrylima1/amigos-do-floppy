@@ -1,0 +1,216 @@
+/* Reset and base styles */
+body, html {
+    height: 100%;
+    background: #fff7ec;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    min-width: 220px;
+    background: #181c5a;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+}
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar-title {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    color: #ffb13b;
+}
+.sidebar-toggle {
+    display: none;
+}
+.sidebar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
+    background: #ffb13b;
+    color: #181c5a;
+    text-decoration: none;
+}
+.sidebar-nav .nav-link i {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 260px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #fff7ec;
+}
+
+/* Topbar */
+.topbar {
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    min-height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo {
+    height: 38px;
+    width: 38px;
+    object-fit: contain;
+}
+.topbar-title {
+    color: #ffb13b;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+/* Welcome section */
+.bg-welcome {
+    background: #fff3e0;
+    border-radius: 16px;
+    border: 1px solid #ffe0b2;
+}
+.text-orange {
+    color: #ffb13b;
+}
+
+/* Animals section */
+.animals-section h5, .animals-section h6 {
+    color: #181c5a;
+}
+.animal-card {
+    border: 1.5px solid #ffe0b2;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(255,177,59,0.07);
+    transition: box-shadow 0.25s, transform 0.18s;
+    overflow: hidden;
+}
+.animal-card:hover {
+    box-shadow: 0 8px 32px rgba(24,28,90,0.13);
+    transform: translateY(-4px) scale(1.03);
+    border-color: #ffb13b;
+}
+.animal-card .card-img-top {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    object-fit: cover;
+    height: 220px;
+    background: #f7e6c4;
+}
+.animal-card .card-body {
+    padding: 1.1rem 1rem 0.7rem 1rem;
+    text-align: left;
+}
+.animal-card .fw-bold {
+    font-size: 1.15rem;
+    color: #181c5a;
+}
+.animal-card .badge {
+    font-size: 0.9rem;
+    background: #fff8ed;
+    border: 1px solid #ffe0b2;
+    color: #181c5a;
+    margin-bottom: 0.3rem;
+}
+.animal-card .btn-light {
+    background: #fff8ed;
+    border: 1px solid #ffe0b2;
+    color: #ffb13b;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 1px 4px rgba(255,177,59,0.07);
+}
+.animal-card .btn-light:hover {
+    background: #ffb13b;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+    color: #888;
+    font-size: 0.98rem;
+}
+
+/* Modal custom styles */
+.modal-content {
+    border-radius: 18px;
+    border: 1.5px solid #ffe0b2;
+    box-shadow: 0 8px 32px rgba(24,28,90,0.13);
+    background: #fffdf8;
+}
+.modal-header {
+    border-bottom: 1px solid #ffe0b2;
+    background: #fff8ed;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.modal-title {
+    color: #ffb13b;
+    font-weight: 700;
+}
+.modal-body img {
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(255,177,59,0.09);
+}
+.modal-body p {
+    color: #181c5a;
+    font-size: 1.05rem;
+    margin-top: 0.7rem;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        transition: left 0.3s;
+        z-index: 1050;
+    }
+    .sidebar.open {
+        left: 0;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .sidebar-toggle {
+        display: block;
+    }
+}
+@media (max-width: 575.98px) {
+    .animal-card .card-img-top {
+        height: 140px;
+    }
+    .sidebar {
+        width: 100vw;
+        min-width: 0;
+    }
+} 

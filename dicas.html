@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas & Cuidados | Amigos do Floppy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar bg-sidebar d-flex flex-column p-4">
+            <div class="sidebar-header mb-4">
+                <span class="sidebar-title fw-bold text-white">Amigos do Floppy</span>
+                <button class="btn btn-link text-white d-lg-none sidebar-toggle" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="nav flex-column sidebar-nav">
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home me-2"></i>Início</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="projeto.html"><i class="fas fa-info-circle me-2"></i>Projeto</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="adocao.html"><i class="fas fa-paw me-2"></i>Adoção</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link active" href="dicas.html"><i class="fas fa-heart me-2"></i>Dicas & Cuidados</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="denuncias.html"><i class="fas fa-exclamation-triangle me-2"></i>Denúncias</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="contato.html"><i class="fas fa-envelope me-2"></i>Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main-content flex-grow-1">
+            <header class="topbar d-flex align-items-center px-4 py-3 bg-white shadow-sm">
+                <img src="img/logo.png" alt="Logo" class="logo me-2">
+                <span class="topbar-title fw-bold">Amigos do Floppy</span>
+            </header>
+            <main class="content-area p-4">
+                <section class="mb-4 p-5 rounded bg-welcome text-center" style="background: linear-gradient(90deg, #fff3e0 60%, #ffe0b2 100%);">
+                    <h1 class="fw-bold text-orange mb-2" style="font-size:2.2rem;">Dicas Essenciais para o Bem-Estar do Seu Pet</h1>
+                    <p class="lead text-muted mb-0">Cuidados, segurança e felicidade para cães e gatos em todas as fases da vida</p>
+                </section>
+                <section class="tips-section mb-5">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card p-4 border-0 shadow-sm bg-white rounded-4 h-100 text-center">
+                                <div class="mb-3"><i class="fas fa-bone fa-2x text-orange"></i></div>
+                                <h3 class="fw-bold mb-2 text-orange">Alimentação Saudável</h3>
+                                <p class="mb-0">Ofereça ração de qualidade, água fresca sempre disponível e evite alimentos perigosos como chocolate, uva e cebola.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card p-4 border-0 shadow-sm bg-white rounded-4 h-100 text-center">
+                                <div class="mb-3"><i class="fas fa-stethoscope fa-2x text-orange"></i></div>
+                                <h3 class="fw-bold mb-2 text-orange">Saúde em Dia</h3>
+                                <p class="mb-0">Vacine, vermifugue e leve ao veterinário regularmente. Fique atento a mudanças de comportamento ou sinais de doença.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card p-4 border-0 shadow-sm bg-white rounded-4 h-100 text-center">
+                                <div class="mb-3"><i class="fas fa-shower fa-2x text-orange"></i></div>
+                                <h3 class="fw-bold mb-2 text-orange">Higiene e Limpeza</h3>
+                                <p class="mb-0">Banhos regulares, ambiente limpo e escovação frequente dos pelos e dentes garantem saúde e bem-estar.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card p-4 border-0 shadow-sm bg-white rounded-4 h-100 text-center">
+                                <div class="mb-3"><i class="fas fa-dog fa-2x text-orange"></i></div>
+                                <h3 class="fw-bold mb-2 text-orange">Bem-estar e Enriquecimento</h3>
+                                <p class="mb-0">Proporcione passeios, brincadeiras, brinquedos interativos e carinho diário para estimular corpo e mente.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card p-4 border-0 shadow-sm bg-white rounded-4 h-100 text-center">
+                                <div class="mb-3"><i class="fas fa-home fa-2x text-orange"></i></div>
+                                <h3 class="fw-bold mb-2 text-orange">Ambiente Seguro</h3>
+                                <p class="mb-0">Mantenha o lar livre de objetos perigosos, proteja sacadas e janelas, e supervisione o acesso ao quintal.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card p-4 border-0 shadow-sm bg-white rounded-4 h-100 text-center">
+                                <div class="mb-3"><i class="fas fa-heart fa-2x text-orange"></i></div>
+                                <h3 class="fw-bold mb-2 text-orange">Amor e Paciência</h3>
+                                <p class="mb-0">Respeite o tempo de adaptação, use reforço positivo e crie uma relação de confiança e carinho com seu pet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer text-center py-3 bg-white mt-auto">
+                <span class="text-muted">© 2025 Amigos do Floppy. Todos os direitos reservados.</span>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
