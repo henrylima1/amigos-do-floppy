@@ -213,4 +213,60 @@ body, html {
         width: 100vw;
         min-width: 0;
     }
+}
+
+.equipe-img {
+    max-height: 400px;
+}
+
+.lost-pet-card {
+    background: #fffbe8;
+    border: 1.5px solid #f5e7b2;
+    border-radius: 10px;
+}
+.lost-pet-img {
+    object-fit: cover;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.lost-badge {
+    background: #f5e7b2;
+    color: #b89c3a;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.lost-pet-name {
+    color: #181c5a;
+}
+.lost-pet-date, .lost-pet-desc {
+    font-size: 0.97rem;
+    color: #555;
+}
+.lost-hr {
+    margin: 8px 0;
+}
+.lost-pet-contact {
+    font-size: 0.96rem;
+    color: #444;
+}
+.donate-section {
+    background: #eef6ff;
+    border-radius: 16px;
+}
+.donate-title {
+    color: #f59c07;
+}
+.donate-desc {
+    color: #181c5a;
+}
+.donate-btn {
+    background: #f59c07;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+.donate-pix {
+    color: #181c5a;
+    font-size: 0.98rem;
 } 

@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const pagAtual = window.location.pathname.split('/').pop() || 'index.html';
     
@@ -11,17 +10,21 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.add('active');
         }
     });
-});
 
-
-document.addEventListener('DOMContentLoaded', function() {
-
-    const sidebarToggle = document.getElementById('sidebarToggle');
-    const sidebar = document.querySelector('.sidebar');
-    
-    if (sidebarToggle) {
-        sidebarToggle.addEventListener('click', function() {
-            sidebar.classList.toggle('open');
+    const filterForm = document.getElementById('adoptionFilterBar');
+    if (filterForm) {
+        filterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const species = document.getElementById('filterSpecies').value;
+            const size = document.getElementById('filterSize').value;
+            const name = document.getElementById('filterName').value.trim().toLowerCase();
+            document.querySelectorAll('#adoptionAnimalsList .animal-card').forEach(card => {
+                const match = (!species || card.dataset.species === species)
+                    && (!size || card.dataset.size === size)
+                    && (!name || card.dataset.name.toLowerCase().includes(name));
+                card.closest('.col-12').style.display = match ? '' : 'none';
+            });
         });
     }
-}); 
+});
+
