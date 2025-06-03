@@ -251,22 +251,38 @@ body, html {
     color: #444;
 }
 .donate-section {
-    background: #eef6ff;
-    border-radius: 16px;
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe0b2 100%);
+    border: 1px solid #ffb13b;
+    box-shadow: 0 4px 15px rgba(255, 177, 59, 0.1);
 }
 .donate-title {
-    color: #f59c07;
+    color: #ffb13b;
+    font-size: 2rem;
 }
 .donate-desc {
-    color: #181c5a;
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .donate-btn {
-    background: #f59c07;
-    color: #fff;
+    background-color: #ffb13b;
+    border: none;
+    color: white;
+    padding: 12px 30px;
     font-weight: 600;
-    font-size: 1.15rem;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 177, 59, 0.2);
+}
+.adopt-btn:hover {
+    background-color: #ff9f1a;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 177, 59, 0.3);
 }
 .donate-pix {
-    color: #181c5a;
-    font-size: 0.98rem;
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 500;
 } 
