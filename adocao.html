@@ -49,25 +49,8 @@
                 <section class="adoption-section mb-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
-                            <div class="card p-4 border-0 shadow-sm bg-white rounded-4 mb-4">
-                                <h2 class="fw-bold mb-3 text-orange">Como funciona a adoção?</h2>
-                                <ol class="mb-4">
-                                    <li>Escolha o pet que deseja adotar em nossa lista de animais disponíveis.</li>
-                                    <li>Preencha o formulário de interesse em adoção.</li>
-                                    <li>Nosso time entrará em contato para uma entrevista e orientações.</li>
-                                    <li>Após aprovação, agendamos a entrega do pet em sua casa ou a retirada conosco.</li>
-                                </ol>
-                                <h3 class="fw-bold mt-4 mb-3 text-orange">Requisitos para adoção</h3>
-                                <ul>
-                                    <li>Ser maior de 18 anos</li>
-                                    <li>Apresentar documento de identificação</li>
-                                    <li>Concordar com a visita prévia e acompanhamento pós-adoção</li>
-                                    <li>Assinar termo de responsabilidade</li>
-                                </ul>
-                            </div>
                             <div class="card p-4 border-0 shadow-sm bg-white rounded-4">
                                 <h2 class="fw-bold mb-3 text-orange">Animais para Adoção</h2>
-                                <!-- Filter Bar Start -->
                                 <form class="row g-2 align-items-end mb-4" id="adoptionFilterBar">
                                     <div class="col-12 col-md-4 col-lg-3">
                                         <label for="filterSpecies" class="form-label mb-1">Espécie</label>
@@ -94,31 +77,30 @@
                                         <button type="submit" class="btn btn-light mt-2 mt-lg-0"><i class="fas fa-search me-1"></i>Filtrar</button>
                                     </div>
                                 </form>
-                                <!-- Filter Bar End -->
-                                <div class="row g-3">
+                                <div class="row g-3" id="adoptionAnimalsList">
                                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="animal-card card h-100">
-                                            <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" class="card-img-top" alt="Panda">
+                                        <div class="animal-card card h-100" data-species="Cachorro" data-size="Médio" data-name="Panda">
+                                            <img src="img/panda.jpg" class="card-img-top" alt="Panda">
                                             <div class="card-body">
                                                 <div class="fw-bold">Panda</div>
                                                 <span class="badge bg-light text-dark border me-1">Cachorro</span>
                                                 <span class="badge bg-light text-dark border">Médio</span>
                                             </div>
                                             <div class="card-footer bg-transparent border-0">
-                                                <button class="btn btn-light w-100">Ver mais</button>
+                                                <button class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalPanda">Ver mais</button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="animal-card card h-100">
-                                            <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" class="card-img-top" alt="Florisbela">
+                                        <div class="animal-card card h-100" data-species="Cachorro" data-size="Médio" data-name="Florisbela">
+                                            <img src="img/florisbela.jpg" class="card-img-top" alt="Florisbela">
                                             <div class="card-body">
                                                 <div class="fw-bold">Florisbela</div>
                                                 <span class="badge bg-light text-dark border me-1">Cachorro</span>
                                                 <span class="badge bg-light text-dark border">Médio</span>
                                             </div>
                                             <div class="card-footer bg-transparent border-0">
-                                                <button class="btn btn-light w-100">Ver mais</button>
+                                                <button class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalFlorisbela">Ver mais</button>
                                             </div>
                                         </div>
                                     </div>
@@ -131,16 +113,42 @@
                                                 <span class="badge bg-light text-dark border">Médio</span>
                                             </div>
                                             <div class="card-footer bg-transparent border-0">
+                                                <button class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalMaria">Ver mais</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="animal-card card h-100" data-species="Cachorro" data-size="Médio" data-name="Lara">
+                                            <img src="img/lara.jpg" class="card-img-top" alt="Lara">
+                                            <div class="card-body">
+                                                <div class="fw-bold">Lara</div>
+                                                <span class="badge bg-light text-dark border me-1">Cachorro</span>
+                                                <span class="badge bg-light text-dark border">Médio</span>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0">
+                                                <button class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalLara">Ver mais</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="animal-card card h-100" data-species="Gato" data-size="Pequeno" data-name="Whiskers">
+                                            <img src="img/lulu.jpg" class="card-img-top" alt="Lulu">
+                                            <div class="card-body">
+                                                <div class="fw-bold">Lulu</div>
+                                                <span class="badge bg-light text-dark border me-1">Gato</span>
+                                                <span class="badge bg-light text-dark border">Pequeno</span>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0">
                                                 <button class="btn btn-light w-100">Ver mais</button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="animal-card card h-100">
-                                            <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a" class="card-img-top" alt="Lara">
+                                        <div class="animal-card card h-100" data-species="Gato" data-size="Médio" data-name="Mimi">
+                                            <img src="img/mimi.jpg" class="card-img-top" alt="Mimi">
                                             <div class="card-body">
-                                                <div class="fw-bold">Lara</div>
-                                                <span class="badge bg-light text-dark border me-1">Cachorro</span>
+                                                <div class="fw-bold">Mimi</div>
+                                                <span class="badge bg-light text-dark border me-1">Gato</span>
                                                 <span class="badge bg-light text-dark border">Médio</span>
                                             </div>
                                             <div class="card-footer bg-transparent border-0">
@@ -148,9 +156,19 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="text-end mt-3">
-                                    <button class="btn btn-light">Ver todos os Pets</button>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="animal-card card h-100" data-species="Cachorro" data-size="Grande" data-name="Rex">
+                                            <img src="img/max.jpeg" class="card-img-top" alt="Max">
+                                            <div class="card-body">
+                                                <div class="fw-bold">Max</div>
+                                                <span class="badge bg-light text-dark border me-1">Cachorro</span>
+                                                <span class="badge bg-light text-dark border">Grande</span>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-0">
+                                                <button class="btn btn-light w-100">Ver mais</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -164,5 +182,61 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <div class="modal fade" id="modalPanda" tabindex="-1" aria-labelledby="modalPandaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPandaLabel">Panda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/panda.jpg" class="img-fluid rounded mb-3" alt="Panda">
+                    <p>Cachorro médio, muito brincalhão e carinhoso. Adora correr e receber carinho!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalFlorisbela" tabindex="-1" aria-labelledby="modalFlorisbelaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFlorisbelaLabel">Florisbela</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/florisbela.jpg" class="img-fluid rounded mb-3" alt="Florisbela">
+                    <p>Cachorra dócil, ótima para famílias. Gosta de passeios e de brincar com outros cães.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalMaria" tabindex="-1" aria-labelledby="modalMariaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMariaLabel">Maria Rosinha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/maria.jpg" class="img-fluid rounded mb-3" alt="Maria Rosinha">
+                    <p>Carinhosa e tranquila, adora um colo e é muito companheira. Ideal para ambientes calmos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLara" tabindex="-1" aria-labelledby="modalLaraLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLaraLabel">Lara</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/lara.jpg" class="img-fluid rounded mb-3" alt="Lara">
+                    <p>Cheia de energia, perfeita para quem gosta de atividades ao ar livre. Muito leal e esperta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html> 

@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 body, html {
     height: 100%;
     background: #fff7ec;
@@ -9,7 +9,7 @@ body, html {
     min-height: 100vh;
 }
 
-/* Sidebar */
+
 .sidebar {
     width: 260px;
     min-width: 220px;
@@ -58,7 +58,7 @@ body, html {
     margin-right: 0.5rem;
 }
 
-/* Main content area */
+
 .main-content {
     margin-left: 260px;
     display: flex;
@@ -67,7 +67,7 @@ body, html {
     background: #fff7ec;
 }
 
-/* Topbar */
+
 .topbar {
     background: #fff;
     border-bottom: 1px solid #f0f0f0;
@@ -87,7 +87,7 @@ body, html {
     margin-left: 0.5rem;
 }
 
-/* Welcome section */
+
 .bg-welcome {
     background: #fff3e0;
     border-radius: 16px;
@@ -97,7 +97,7 @@ body, html {
     color: #ffb13b;
 }
 
-/* Animals section */
+
 .animals-section h5, .animals-section h6 {
     color: #181c5a;
 }
@@ -150,7 +150,7 @@ body, html {
     color: #fff;
 }
 
-/* Footer */
+
 .footer {
     background: #fff;
     border-top: 1px solid #f0f0f0;
@@ -158,7 +158,6 @@ body, html {
     font-size: 0.98rem;
 }
 
-/* Modal custom styles */
 .modal-content {
     border-radius: 18px;
     border: 1.5px solid #ffe0b2;
@@ -187,7 +186,7 @@ body, html {
     margin-top: 0.7rem;
 }
 
-/* Responsive */
+
 @media (max-width: 991.98px) {
     .sidebar {
         position: fixed;
@@ -213,4 +212,76 @@ body, html {
         width: 100vw;
         min-width: 0;
     }
+}
+
+.equipe-img {
+    max-height: 400px;
+}
+
+.lost-pet-card {
+    background: #fffbe8;
+    border: 1.5px solid #f5e7b2;
+    border-radius: 10px;
+}
+.lost-pet-img {
+    object-fit: cover;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.lost-badge {
+    background: #f5e7b2;
+    color: #b89c3a;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.lost-pet-name {
+    color: #181c5a;
+}
+.lost-pet-date, .lost-pet-desc {
+    font-size: 0.97rem;
+    color: #555;
+}
+.lost-hr {
+    margin: 8px 0;
+}
+.lost-pet-contact {
+    font-size: 0.96rem;
+    color: #444;
+}
+.donate-section {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe0b2 100%);
+    border: 1px solid #ffb13b;
+    box-shadow: 0 4px 15px rgba(255, 177, 59, 0.1);
+}
+.donate-title {
+    color: #ffb13b;
+    font-size: 2rem;
+}
+.donate-desc {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.donate-btn {
+    background-color: #ffb13b;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 177, 59, 0.2);
+}
+.adopt-btn:hover {
+    background-color: #ff9f1a;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 177, 59, 0.3);
+}
+.donate-pix {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 500;
 } 
