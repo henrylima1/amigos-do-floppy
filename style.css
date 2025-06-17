@@ -73,21 +73,35 @@ body, html {
 /* Topbar */
 .topbar {
     background: white;
-    padding: 1rem;
+    padding: 0.75rem 1.5rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1001;
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+}
+
+.topbar .d-flex {
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+    margin-right: 1rem;
+    flex-shrink: 0;
 }
 
 .topbar-title {
     font-size: 1.2rem;
     color: #333;
-}
-
-.logo {
-    height: 40px;
-    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Responsive */
@@ -120,13 +134,37 @@ body, html {
     }
 
     .topbar {
-        margin-left: 0;
-        width: calc(100% - 60px);
+        padding: 0.75rem 1rem;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .topbar-title {
+        font-size: 1.1rem;
     }
 
     .footer {
         margin-left: 60px;
         width: calc(100% - 60px);
+    }
+}
+
+@media (max-width: 576px) {
+    .topbar {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        height: 35px;
+        width: 35px;
+        margin-right: 0.75rem;
+    }
+
+    .topbar-title {
+        font-size: 1rem;
     }
 }
 
